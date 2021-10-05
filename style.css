@@ -130,6 +130,12 @@ h5 {
 
 }
 
+.mobiletitle {
+  font-family: 'Quattrocento', serif;
+  font-size: 1.5em;
+  line-height: 1.em;
+}
+
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -138,6 +144,11 @@ h5 {
   }
   #index-banner .section {
     top: 10%;
+  }
+  .mobiletitle {
+    font-family: 'Quattrocento', serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
   }
 }
 
