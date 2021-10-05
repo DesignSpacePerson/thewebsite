@@ -133,9 +133,13 @@ h5 {
 .mobiletitle {
   font-family: 'Quattrocento', serif;
   font-size: 1.5em;
-  line-height: 1.em;
+  line-height: 1.5em;
 }
 
+/* Menu button colour */
+i.menu-icon {
+  color: #672710;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {

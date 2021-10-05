@@ -18,20 +18,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.ico" type="image/ico" sizes="16x16">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
 
 </head>
 <body>
 
-  <section id="port4">
   <div class="navbar-fixed">
-    <nav class="z-depth-0" role="navigation" id="port4">
+    <nav class="z-depth-0" role="navigation">
       <div class="nav-wrapper container">
+
+        <!-- This line is for mobile -->
+        <a href="#" data-activates="mobile-demo" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons menu-icon">menu</i></a>
+        <!-- Link to the mobile HTML+JS fix!!! https://github.com/Dogfalo/materialize/issues/3844 -->
+
 
         <a id="logo-container" href="index.html" class="brand-logo center"><span style="font-weight: bold;">GD</span></a>
         <ul class="left hide-on-med-and-down">
-          <li class="hvr-underline-from-left"><a href="index.html">Work</a></li>
+          <li class="hvr-underline-from-left"><a href="https://guiledomingo.com/">Work</a></li>
           <li class="hvr-underline-from-left"><a href="about.html">About</a></li>
         </ul>
         <ul class="right hide-on-med-and-down">
@@ -39,17 +44,18 @@
           <li class="hvr-underline-from-left"><a href="mailto:domingoguile@gmail.com">Contact</a></li>
         </ul>
 
-        <ul class="sidenav" id="mobile-demo">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
       </div>
     </nav>
   </div>
+
+
+  <!--FIX navbar on mobile -->
+  <ul id="nav-mobile" class="sidenav">
+    <li><a href="index.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="resume.html" target="_blank">Resume</a></li>
+    <li><a href="mailto:domingoguile@gmail.com">Contact</a></li>
+  </ul>
 
 
 

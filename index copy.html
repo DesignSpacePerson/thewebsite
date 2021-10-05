@@ -18,42 +18,45 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/favicon.ico" type="image/ico" sizes="16x16">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 
 </head>
 <body>
 
   <div class="navbar-fixed">
-    <nav class="z-depth-0" role="navigation">
+    <nav role="navigation">
       <div class="nav-wrapper container">
 
         <!-- This line is for mobile -->
         <a href="#" data-activates="mobile-demo" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons menu-icon">menu</i></a>
         <!-- Link to the mobile HTML+JS fix!!! https://github.com/Dogfalo/materialize/issues/3844 -->
 
-
-        <a id="logo-container" href="index.html" class="brand-logo center"><span style="font-weight: bold;">GD</span></a>
-        <ul class="left hide-on-med-and-down">
-          <li class="hvr-underline-from-left"><a href="https://guiledomingo.com/">Work</a></li>
-          <li class="hvr-underline-from-left"><a href="about.html">About</a></li>
-        </ul>
+        <a href="index.html"><img class="logo" src="icons/logo.png"></a>
         <ul class="right hide-on-med-and-down">
-          <li class="hvr-underline-from-left"><a href="Guile-Domingo-Resume.pdf" target="_blank">Resume</a></li>
-          <li class="hvr-underline-from-left"><a href="mailto:domingoguile@gmail.com">Contact</a></li>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="forbuilders.html">For Builders</a></li>
+          <li><a href="demo/dashboard.html">Demo</a></li>
+          <li><a href="https://forms.gle/gziWHaZNF4FJ2r9t9" target="_blank">Survey</a></li>
+          <!-- To enable the secondary Login button <li><a href="#"><button class="buttons secondary">Login</button></a></li> -->
+          <!-- Remember this format for modal triggers, it's a pretty specific order to work with the styling -->
+          <li><a class="modal-trigger" href="#registermodal"><button class="buttons primary">Register</button></a></li>
         </ul>
+
 
       </div>
     </nav>
   </div>
 
-
   <!--FIX navbar on mobile -->
   <ul id="nav-mobile" class="sidenav">
-    <li><a href="index.html">Work</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="resume.html" target="_blank">Resume</a></li>
-    <li><a href="mailto:domingoguile@gmail.com">Contact</a></li>
+    <li><a href="index.html"><img class="logo" src="icons/logo.png"></a></li>
+    <li><a href="#">How It Works</a></li>
+    <li><a href="forbuilders.html">For Builders</a></li>
+    <li><a href="demo/dashboard.html">Demo</a></li>
+    <li><a href="https://forms.gle/gziWHaZNF4FJ2r9t9" target="_blank">Fill Our Survey</a></li>
+    <!-- To enable the secondary Login button <li><a href="#"><button class="buttons secondary">Login</button></a></li> -->
+    <li><a class="buttons primary modal-trigger" href="#registermodal">Register</a></li>
   </ul>
 
 
