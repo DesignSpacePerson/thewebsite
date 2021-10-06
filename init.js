@@ -39,3 +39,21 @@ function topFunction() {
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+
+(function($){
+
+    $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+
+})(jQuery);
+
+
+
+// How to use a jQuery function
+// (function($){
+//
+//   Place function here
+//
+// })(jQuery);
